@@ -1,0 +1,33 @@
+/* color palette */
+:root {
+  --vt-c-black: #252525;
+  --vt-c-gray: #f6f8fd;
+}
+
+/* semantic color variables */
+:root {
+  --color-background: var(--vt-c-gray);
+  --color-text: var(--vt-c-black);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100%;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
